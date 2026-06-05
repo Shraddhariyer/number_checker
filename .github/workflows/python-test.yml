@@ -6,14 +6,14 @@ on:
 
 jobs:
   test:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version:"3.13"
+          python-version: "3.13"
       - name: Install Pytest
         run: pip install pytest
       - name: Run Tests
